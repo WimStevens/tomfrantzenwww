@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bezoeken</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Bootstrap form validation -->
+	<link rel="stylesheet" href="../css/bootstrapValidator.css"/>
+	<!-- Optional: Include the jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Javascript for Bootstrap validator -->
+	<script type="text/javascript" src="../js/bootstrapValidator.js"></script>
+	<!-- Language specific files for Bootstrap validator 
+	<script type="text/javascript" src="../js/language/be_NL.js"></script>
+	-->
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20016336-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<link rel="stylesheet" href="../css/tomfrantzen.css" type="text/css" >
+
+	<style>
+		/* set a max-width for horizontal fluid layout and make it centered */
+		.container-fluid {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 710px; /* or 950px */
+		}
+		/* horizontal align images */
+		IMG {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media screen and (max-width: 768px) {
+			body { padding-top: 40px; }
+		}	
+		/* for fixed bottom navigation menu */
+		body { 
+			padding-bottom: 70px; 
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs">
+	  <div class="container">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="somnl.htm">Terug</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- div for xs small screens -->
+			<!-- buttons above image -->
+			<nav class="navbar navbar-default navbar-fixed-top visible-xs " role="navigation" >
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+							<span class="sr-only">Groepsbezoek & Dagtrip</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Groepsbezoek & Dagtrip</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li ><a href="schat.htm">Paden van de Chatmikaze</a></li>
+							<li ><a href="somnl.htm">Terug</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>			
+
+
+			<!-- ******************* -->
+			<!-- Groepsbezoek -->
+			<!-- ******************* -->
+			<div class="col-sm-12">
+				<h1>Groepsbezoek</h1>
+				<p>
+					De tuin kan bezocht worden van 15 april tot 15 oktober.
+				</p>
+				<p>
+					Groepen van minimum 15 & maximum 25 deelnemers.
+				</p>
+				<p>
+					Reservatie vooraf noodzakelijk, via het <a href="#reservatie">elektronisch reservatieformulier</a>.  U ontvangt een bevestiging met de gegevens voor betaling.  De reservatie kan slechts ingaan na ontvangst van de betaling.
+				</p>
+				<p>
+					Gepast schoeisel is aanbevolen.
+				</p>
+				<p>
+					Duur: +/- 2 uur.
+				</p>
+				<p>
+					Waaienberg 17 - 3080 Duisburg.
+				</p>
+				<p>
+					Parking voor ongeveer 20 auto's.
+				</p>
+				<p>
+					<span style="text-decoration: underline;">Deelnameprijs</span>:
+					<ul >
+						<li >Volwassenen: € 14,00</li>
+						<li >Senioren (65+) en studenten: € 10,00 </li>
+						<li >Kinderen onder 12 jaar: € 5,00</li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Dagtrip -->
+			<!-- ************************************** -->
+			<div class="col-sm-12" >
+				<h1>Dagtrip</h1>
+				<p>
+					Rondrit met de bus langs een aantal straatbeelden in Brussel, Steenokkerzeel en Tervuren; bezoek aan Tom's beeldentuin in Duisburg.
+				</p>
+				<p>
+					Bus vanuit eigen gemeente of vanaf het Brusselse Centraal station
+				</p>
+				<p>
+					<span style="text-decoration: underline;">Richtprijs</span>: € 35,00 (inclusief gidsen, inkom & lunch - exclusief autocar)
+				</p>
+				<p>
+					<span style="text-decoration: underline;">Standaardprogramma</span>:
+					<ul >
+						<li>09.45u: Samenkomst Brussel Centraal station (tenzij anders overeen gekomen)</li>
+						<li>10.00u: Tom Frantzen beeldenroute</li>
+						<li>12.30u: Lunch in Tervuren</li>
+						<li>14.30u: Bezoek atelier en beeldentuin in Duisburg</li>
+						<li>16.30u: Optioneel: Breugheltaart of Duisburgse kaastaart (oud recept) met koffie of thee.  Afzonderlijk te betalen: streekbier, streekwijn en fruitsap uit de streek.</li>
+						<li>17.15u: Einde en aanvang terugrit</li>
+					</ul>
+				</p>
+				<p>
+					Gelieve het <a href="#reservatie">reservatieformulier</a> in te vullen.<br>
+				</p>
+			</div>
+
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Reservatieformulier                    -->
+			<!-- Let op: de validator werkt op basis van naam -->
+			<!-- ************************************** -->
+			<div class="col-sm-12" id="reservatieformContainer">
+				<form role="form" id="reservatieform" method="post" >
+						<a id="reservatie"></a>
+						<h1>Reservatie- & inlichtingenformulier</h1><br>
+
+						<div class="form-group">
+							<label for="contact">Contactpersoon:</label>
+							<input type="text" class="form-control" id="contact" name="contact"
+								data-bv-notempty="true"
+								data-bv-notempty-message="Contactpersoon is een verplicht veld."
+								data-bv-stringlength="true"
+								data-bv-stringlength-min="3"
+								data-bv-stringlength-message="De contactpersoon moet minstens 6 karakters lang zijn."						
+							>
+						</div>
+						<div class="form-group">
+							<label for="mail">e-mail adres:</label>
+							<input type="email" class="form-control" id="mail" name="mail"
+								data-bv-notempty="true"
+								data-bv-notempty-message="e-mail adres is een verplicht veld."
+								data-bv-emailaddress="true"
+								data-bv-emailaddress-message="Dit lijkt geen geldig e-mail adres."
+								>
+						</div>
+						<div class="form-group">
+							<label for="tel">Telefoon/GSM:</label>
+							<input type="text" class="form-control" id="tel" name="tel"
+								data-bv-regexp="true"
+								data-bv-regexp-regexp="^[0-9 \.\-/]{9,20}$"
+								data-bv-regexp-message="Telefoonnummer bevat minstens 9 cijfers.  Andere karakters zijn niet toegelaten."
+							>
+						</div>
+						<div class="form-group">
+							<label>Gewenste informatie</label>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Feedback" />Feedback geven</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Vraag" />Vraag stellen</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Groepsbezoek" />Groepsbezoek vastleggen</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Dagtrip" />Dagtrip vastleggen</label>
+								</div>							
+						</div>
+
+						<div class="form-group" id="aantalpersonensectie" style="display:none">
+							<label for="aantal">Aantal deelnemers:</label>
+							<input type="text" class="form-control" id="aantal" name="aantal" 
+								data-bv-notempty="true"
+								data-bv-notempty-message="Uit hoeveel personen bestaat de groep ?"
+								data-bv-integer="true"
+								data-bv-integer-message="Geldig aantal opgeven." 
+								data-bv-between="true"
+								data-bv-between-inclusive="true"
+								data-bv-between-min="15"
+								data-bv-between-max="25"
+								data-bv-between-message="Grootte van de groep is 15..25 personen"
+								>
+						</div>	
+
+						<div class="form-group" id="datum1sectie" style="display:none">
+							<label for="datum1">Voorkeurdatum en -uur:</label>
+							<input type="text" class="form-control" name="datum1" id="datum1" placeholder="DD/MM/YYYY hh:mm"
+								data-bv-notempty="true"
+								data-bv-notempty-message="De voorkeurdatum is een verplicht veld."
+								data-bv-date="true"
+								data-bv-date-format="DD/MM/YYYY h:m"
+								data-bv-date-message="Gelieve een geldige datum (DD/MM/YYYY hh:mm) in te vullen" />
+						</div>
+						<div class="form-group" id="datum2sectie" style="display:none">
+							<label for="datum2">Alternatieve datum en -uur:</label>
+							<input type="text" class="form-control" name="datum2" id="datum2" placeholder="DD/MM/YYYY hh:mm"
+								data-bv-notempty="false"
+								data-bv-date="true"
+								data-bv-date-format="DD/MM/YYYY hh:mm"
+								data-bv-date-message="Gelieve een geldige datum (DD/MM/YYYY hh:mm) in te vullen" />
+						</div>	
+						<div class="form-group" id="datum3sectie" style="display:none">
+							<label for="datum3">Alternatieve datum en -uur:</label>
+							<input type="text" class="form-control" name="datum3" id="datum3" placeholder="DD/MM/YYYY hh:mm"
+								data-bv-notempty="false"
+								data-bv-date="true"
+								data-bv-date-format="DD/MM/YYYY h:m"
+								data-bv-date-message="Gelieve een geldige datum (DD/MM/YYYY hh:mm) in te vullen" />
+						</div>	
+						<div class="form-group" id="autocarsectie" style="display:none">
+							<label>Autocar</label>
+								<div class="radio">
+									<label><input type="radio" name="autocar" id="autocarO" value="Organisator zorgt voor car" />Contactpersoon zorgt zelf voor autocar</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="autocar" id="autocarA" value="Artiest zorgt voor car" />De artiest zorgt voor autocar</label>
+								</div>
+						</div>						
+						<div class="form-group" id="startplaatssectie" style="display:none">
+							<label for="startplaats">Startplaats autocar:</label>
+							<input type="text" class="form-control" id="startplaats" name="startplaats">
+						</div>
+						<div id="dessertsectie" style="display:none">
+							<div class="form-group" >
+								<label for="aantal">Aantal porties Bruegheltaart me koffie of thee (€ 5,00):</label>
+								<input type="text" class="form-control" id="aantalKaas" name="aantalKaas" 
+									data-bv-notempty="true"
+									data-bv-notempty-message="Hoeveel porties Bruegheltaart."
+									data-bv-integer="true"
+									data-bv-integer-message="Geldig aantal opgeven." 
+									>
+							</div>
+							<div class="form-group" >									
+								<label for="aantal">Aantal porties Duisburgse kaastaart (oud recept) met koffie of thee (€ 5,00):</label>
+								<input type="text" class="form-control" id="aantalTaart" name="aantalTaart" 
+									data-bv-notempty="true"
+									data-bv-notempty-message="Hoeveel porties Duisburgse kaastaart."
+									data-bv-integer="true"
+									data-bv-integer-message="Geldig aantal opgeven." 
+									>								
+							</div>
+						</div> <!-- /dessertSectie -->
+						<div class="form-group">
+							<label for="comment">Vragen - Opmerkingen:</label>
+							<textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+						</div>	
+						<!-- user language as hidden field -->
+						<input type="text" name="taal" id="taal" style="display:none;" value="nl">
+						<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+						<button type="submit" class="btn btn-default">Verzenden</button>
+				</form>
+			</div> <!-- formcontainer -->
+			<div class="clearfix"></div>
+			<!-- ******************* -->
+			<!-- Bereikbaarheid -->
+			<!-- ******************* -->
+			<div class="col-sm-12" >
+				<h1>Bereikbaarheid</h1>
+				<div class="embed-responsive embed-responsive-4by3" style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2521.6030812998597!2d4.541521708277187!3d50.80146410936882!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbe!4v1423771836045">
+					</iframe>
+
+				</div>
+				<p>De tuinen liggen midden in de velden van Duisburg, een deelgemeente van Tervuren.  Honderd meter verder wandelt U recht het <a href="http://www.zonienwoud.be/" target="_blank">Zoniënwoud</a> in dat op het punt staat geklasseerd te worden als Unesco werelderfgoed.  </p>
+				<p><a href="https://www.delijn.be/nl/lijnen/lijn//3/830/1/BUS" target="_blank">Bus nr. 830 van de Lijn</a> brengt U tot halte Duisburg Eizerstraat.  Van daaruit wandelt U naar de <b><a href="https://www.google.be/maps/place/Waaienberg+19,+3080+Tervuren/@50.8014453,4.5397786,17z/data=!3m1!4b1!4m2!3m1!1s0x47c3d90870ce59a7:0xd39a85c66e7d184e" target="_blank">Waaienberg nr 17</a></b>, waar de gids u opwacht.  De ingang van de tuin bevindt zich vlak naast de woning nr 19.  <b>Gelieve er niet aan te bellen</b>; wandel door de poort.</p>
+			</div>			
+	<div class="clearfix"></div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+	<!-- Activate form validation script -->
+	<script>
+		$(document).ready(function() {
+			$('#reservatieform').bootstrapValidator({
+				// To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+				feedbackIcons: {
+					valid: null, //'glyphicon glyphicon-ok',
+					invalid: null, //'glyphicon glyphicon-remove',
+					validating: null //'glyphicon glyphicon-refresh'
+				},
+				fields: {
+					formule: {
+						validators: {
+							notEmpty: {
+								message: 'Kies de gewenste informatie.'
+							}
+						}
+					},
+					aantal: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},
+					datum1: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},
+					datum2: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},	
+					datum3: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},		
+					autocar: {
+						validators: {
+							notEmpty: {
+								message: 'Wie zorgt voor de autocar?'
+							}
+						}
+					}					
+				}
+			}).on('success.form.bv', function(e) {
+				console.log ("submit handler called");
+				// Prevent form submission
+				e.preventDefault();
+				// Get the form instance
+				var $form = $(e.target);
+				// Get the FormValidation instance
+				var bv = $form.data('bootstrapValidator');
+				// Use Ajax to submit form data
+				$.ajax({
+					type: "POST",
+					url: "../send_form_email.php",
+					data: $form.serialize(), // serializes the form's elements.
+					dataType: 'html',
+					success: function(data){
+						console.log ("result was received; %o", data);; // bevestigingsboodschap zit in respons als html.
+						$('#reservatieformContainer').html(data);
+					},
+					error: function(jqXHR, textStatus, errorThrown ) {
+						var errorTxt = '<h1 style="color:red;">Onverwachte fout</h1><p>Problemen bij het verzenden van het formulier....</p>';
+						$('#reservatieformContainer').html(errorTxt);
+					}
+				});
+			});
+		
+			// add event handler for radio button
+			$('input[name="formule"]').change( function() {
+				//console.log ("bootstrapValidator object: %o", $('#reservatieform').data('bootstrapValidator'));
+				var choice = $(this).val();
+				//console.log("Gewenste informatie: " + $(this).val());
+				// diverse secties tonen--verstoppen
+				$('#aantalpersonensectie').css( "display", "none" );
+				$('#autocarsectie').css( "display", "none" );
+				$('#startplaatssectie').css( "display", "none" );
+				$('#dessertsectie').css( "display", "none" );
+				$('#datum1sectie').css( "display", "none" );
+				$('#datum2sectie').css( "display", "none" );
+				$('#datum3sectie').css( "display", "none" );			
+
+				if (choice=="Groepsbezoek") {
+					$('#aantalpersonensectie').css( "display", "block" );
+					$('#datum1sectie').css( "display", "block" );
+					$('#datum2sectie').css( "display", "block" );
+					$('#datum3sectie').css( "display", "block" );		
+					// formuliervelden die niet van toepassing zijn wissen zodat ze Tom niet in verwarring brengen
+					$('#autocarO').prop("checked",false);
+					$('#autocarA').prop("checked",false);
+					$('#startplaats').val("");
+					$('#aantalKaas').val("");
+					$('#aantalTaart').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField ( 'startplaats',true);
+
+				} else if (choice=="Dagtrip") {
+					$('#aantalpersonensectie').css( "display", "block" );
+					$('#dessertsectie').css( "display", "block" );
+					$('#datum1sectie').css( "display", "block" );
+					$('#datum2sectie').css( "display", "block" );
+					$('#datum3sectie').css( "display", "block" );	
+					$('#autocarsectie').css( "display", "block" );
+					// startplaats bus mag verstopt blijven
+				} else  {
+					// velden wissen
+					$('#aantal').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField( 'aantal',true);
+					$('#autocarO').prop("checked",false);
+					$('#autocarA').prop("checked",false);
+					$('#startplaats').val("");
+					$('#aantalKaas').val("");
+					$('#aantalTaart').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField('startplaats',true);
+					$('#datum1').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField('datum1',true);
+					$('#datum2').val("");
+					$('#datum3').val("");				
+					//$('#reservatieform').data('bootstrapValidator').resetField('datum2',true);
+
+
+				}
+				
+			});
+			$('input[name="autocar"]').change( function() {
+				// als gekozen wordt voor "artiest kiest de start" dan startplaats tonen
+				var choice = $(this).val();
+				if (choice=="Artiest zorgt voor car") {
+					$('#startplaatssectie').css( "display", "block" );
+				} else {
+					$('#startplaatssectie').css( "display", "none" );
+					$('#startplaats').val("");
+				}
+			});
+		
+		});
+
+		
+		function postReservatieForm ( ) {
+			console.log ("Submit was clicked!");
+			// block the submit
+			return false;
+		}
+	</script>
+</body>
+</html>

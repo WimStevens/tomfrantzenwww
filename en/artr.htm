@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Street</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional: Include the jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Lightbox for Bootstrap: http://ashleydw.github.io/lightbox -->
+	<script src="../js/ekko-lightbox.js"></script>
+	<link href="../css/ekko-lightbox.css" rel="stylesheet" />
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20016336-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<link rel="stylesheet" href="../css/tomfrantzen.css" type="text/css" >
+
+	<style>
+		/* set a max-width for horizontal fluid layout and make it centered */
+		.container-fluid {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 710px; /* or 950px */
+		}
+		/* horizontal align images */
+		IMG {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media screen and (max-width: 768px) {
+			body { padding-top: 40px; }
+		}
+		/* for fixed bottom navigation menu */
+		body { 
+			padding-bottom: 70px; 
+		}		
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs">
+	  <div class="container">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="somen.htm">Back</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- div for xs small screens -->
+			<!-- buttons above image -->
+			<nav class="navbar navbar-default navbar-fixed-top visible-xs " role="navigation" >
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+							<span class="sr-only">Tom Frantzen - Street</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Tom Frantzen - Street</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li ><a href="somen.htm">Back</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>			
+			<!--
+				2 column layout: image + text alternating text + image.  Lightbox effect on the image
+				on very small devices text followed by image - no lightbox
+			-->
+			<div class="col-sm-12 ">
+				<h1>STREET SCULPTURES</h1>
+				<p>
+					Tom Frantzen has been approached several times by district committees and cultural groups to create sculptures relating to Brussels' 
+					cultural legacy.<br>
+					It is not surprising. Tom Frantzen, who was born and bred in Brussels, appreciates the "zwanze", a unique form of humour which he thinks is
+					characterized by the absurdity and surrealism that stem from the mixture of languages so typical of Brussels. 
+					Because this type of humour is "becoming extinct" (as he says), the artist tries to perpetuate it and to confront the next generations with it. 
+					For this "zwanze" to remain integrated in the minds and in the streets, the artist really wanted his works to be sealed in the streets' 
+					pavements and he was concerned that pre-existing elements of the surrounding environment (manhole covers, lampposts, mileposts, etc) 
+					be used as part of his works.
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ******************* -->
+			<!-- TV Movie            -->
+			<!-- ******************* -->			
+			<div class="col-sm-12 ">
+				<div class="embed-responsive embed-responsive-16by9"><!-- 16by9 or 4by3 -->
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/y4fVivOM7K8" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ******************* -->
+			<!-- De Vaartkapoen -->
+			<!-- ******************* -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Vaartkapoen/Vaartkapoen.jpg" data-toggle="lightbox" data-gallery="vaartkapoen" data-title="De Vaartkapoen (1/5)"  >
+						<img src="../images/Vaartkapoen/Vaartkapoen_Small.jpg" alt="De Vaartkapoen" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen2.jpg" data-title="De Vaartkapoen (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen3.jpg" data-title="De Vaartkapoen (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen4.jpg" data-title="De Vaartkapoen (4/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen5.jpg" data-title="De Vaartkapoen (5/5)"></div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>De Vaartkapoen</h2>
+				<p>(1985, Molenbeek, in front of the building of the Communauté Française)</p>
+				<p>
+					Working on an imposed subject, that of "De Vaartkapoen", which is the name given to the people who were born in Molenbeek 
+					(literally "de vaart" means "the canal" and "kapoen" means cheeky), Tom Frantzen stages a little scene on two levels: 
+					the level of the sewers (which lead into the canal) and the level of the pavement (see the lamppost, the cobblestones and the manhole cover).<br>
+					Low down, a young rebel, the Vaartkapoen, reminiscent of a jack-in-the-box, topples over a policeman higher up, thus overthrowing his authority.
+					<br> 
+				</p>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Vaartkapoen/Vaartkapoen.jpg" data-toggle="lightbox" data-gallery="vaartkapoen" data-title="De Vaartkapoen (1/5)"  >
+						<img src="../images/Vaartkapoen/Vaartkapoen_Small.jpg" alt="De Vaartkapoen" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen2.jpg" data-title="De Vaartkapoen (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen3.jpg" data-title="De Vaartkapoen (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen4.jpg" data-title="De Vaartkapoen (4/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen5.jpg" data-title="De Vaartkapoen (5/5)"></div>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			
+			
+			<div class="col-sm-12" >
+				<p>
+					With this statue, the artist makes an implied reference to cartoonist Hergé (who is mostly famous for being the creator of Tintin, 
+					and shared the same "zwanze" as Frantzen) by changing the officer's roll number from 22 (22 being a pun, because of the French expression "vingt-deux, 
+					v'là les flics"= "watch out, here come the cops") to 15 ("Officer 15" was another of Hergé's famous characters).<br>
+					In a snapshot-like motion, the two characters gracefully turn into bronze and remain so forever, leaving the rest of the scene to 
+					our imagination... which is how the rebellious Brussels artist gets passers-by to share a joke with him.
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			
+			<!-- ************************************** -->
+			<!-- Madame Chapeau                         -->
+			<!-- ************************************** -->
+			
+			<div class="col-sm-6" >
+				<h2>Madame Chapeau</h2>
+				<p>(2000, Brussels sculpture located at the corner of  the Fédération des Mutualités Socialistes du Brabant building)</p>	
+				<p>
+					Designed to create a dynamics between two streets, this sculpture beams with its presence in the space that was allocated to the artist. 
+					The monument is precious to Belgium's (and especially Brussels') collective memory. 
+					It contributes to the connection of "the people who pass by" on two interactive parameters: the space of what is real and the time of 
+					what is imaginary. <br>
+					Looking at the lady closely, one notices the artist's "zwanze" again: she is fearlessly counting her money in an area of 
+					Brussels that is famous for its pickpockets. She even teases them with her unsnatchable bronze wallet!<br>
+					<br>
+					<em >
+						Madame Chapeau is one of the colourful characters of "Bossemans et Copenolle", 
+						a 1938 comedy by Paul van Stalle and Joris d'Hanswijck, which features old Brussels' "petits bourgeois". 
+						This play is part of Belgium's cultural heritage.
+					</em>
+				</p>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/MadameChapeau/chapeau1.jpg" data-toggle="lightbox" data-gallery="madamechapeau" data-title="Madame Chapeau (1/4)"  >
+						<img src="../images/MadameChapeau/chapeau1_Small.jpg" alt="Madame Chapeau" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau2.jpg" data-title="Madame Chapeau (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau3.jpg" data-title="Madame Chapeau (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau4.jpg" data-title="Madame Chapeau (4/4)"></div> 
+				</div>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/MadameChapeau/chapeau1.jpg" data-toggle="lightbox" data-gallery="madamechapeau" data-title="Madame Chapeau (1/4)"  >
+						<img src="../images/MadameChapeau/chapeau1_Small.jpg" alt="Madame Chapeau" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau2.jpg" data-title="Madame Chapeau (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau3.jpg" data-title="Madame Chapeau (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau4.jpg" data-title="Madame Chapeau (4/4)"></div> 
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Het Zinneke -->
+			<!-- ************************************** -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Zinneke/zinneke.jpg" data-toggle="lightbox" data-gallery="zinneke" data-title="Het Zinneke (1/6)"  >
+						<img src="../images/Zinneke/zinneke_Small.jpg" alt="Het Zinneke" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke2.jpg" data-title="Het Zinneke (2/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke3.jpg" data-title="Het Zinneke (3/6)"></div>
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke4.jpg" data-title="Het Zinneke (4/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke5.jpg" data-title="Het Zinneke (5/6)"></div> 					
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke6.jpg" data-title="Het Zinneke (6/6)"></div> 
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>Het Zinneke</h2>
+				<p>(1999, Bruxelles, Rue des Chartreux)</p>
+				<p>
+					This "dog thrown into the Senne river" is named "Zinneke" after a Flemish word meaning "mongrel". 
+					Because he is a dog of mixed breed, he symbolises the multicultural nature of Brussels. He is a proper "street sculpture", 
+					as he really is built-in; his legs are sealed into the pavement and the post he is peeing on had been there long before him. 
+					The post became part of the sculpture.<br>
+					<br>
+					This sculpture, commissioned by the Chartreux district committee to attract tourists, was created in the spirit of the "zwanze". 
+					With this dog, Frantzen offers a visual example of this form of humour to all passers-by, especially those looking for an opportunity 
+					to share something and have fun together.
+				</p>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Zinneke/zinneke.jpg" data-toggle="lightbox" data-gallery="zinneke" data-title="Het Zinneke (1/6)"  >
+						<img src="../images/Zinneke/zinneke_Small.jpg" alt="Het Zinneke" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke2.jpg" data-title="Het Zinneke (2/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke3.jpg" data-title="Het Zinneke (3/6)"></div>
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke4.jpg" data-title="Het Zinneke (4/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke5.jpg" data-title="Het Zinneke (5/6)"></div> 					
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke6.jpg" data-title="Het Zinneke (6/6)"></div> 					
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			
+			<!-- ************************************** -->
+			<!-- Bruegel                         -->
+			<!-- ************************************** -->
+			<div class="col-sm-12" >
+				<h2>Pierre Bruegel senior interactive sculpture</h2>
+				<p>
+					The set of Brueghel statues was designed bij Tom Frantzen specifically for the Kapellekerk the church where Brueghel was married, his sons were baptised and he is buried.  <br>
+					The three statues belong in this location and invite the tourists to take a walk in and around the church.
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-6" >
+				<h2>Bruegel at work</h2>
+				<p>(2015, Bruxelles - église Notre-Dame de la Chapelle)</p>
+				<p>			
+					On the square there is a statue of Brueghel, sitting behind his painters’ easel with his eyes fixed on the Blaesstraat.<br>
+					On the easel there is no canvass, just a window.  It is called the "open window" and it symbolises the open look at the world which was so much a part of the Renaissance humanists. On Brueghel’s shoulder there is a monkey with a funnel on his head.  He symbolises the satirical spirit of Brueghel.  Painter and monkey gaze in the same direction.  If you are coming down from the Zavel, you see the artist’s back. You can look over his shoulder with him.  What is he painting?  He is painting life as it evolves, develops before him.  He observes, transposes.  
+				</p>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Bruegel/bruegel.jpg" data-toggle="lightbox" data-gallery="bruegelopenvenster" data-title="Bruegel at work (1/5)"  >
+						<img src="../images/Bruegel/bruegel_Small.jpg" alt="Bruegel at work" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel2.jpg" data-title="Bruegel at work (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel3.jpg" data-title="Bruegel at work (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster1.jpg" data-title="Bruegel at work (4/5)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster2.jpg" data-title="Bruegel at work (5/5)"></div>
+				</div>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Bruegel/bruegel.jpg" data-toggle="lightbox" data-gallery="bruegelopenvenster" data-title="Bruegel at work (1/5)"  >
+						<img src="../images/Bruegel/bruegel_Small.jpg" alt="Bruegel at work" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel2.jpg" data-title="Bruegel at work (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel3.jpg" data-title="Bruegel at work (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster1.jpg" data-title="Bruegel at work (4/5)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster2.jpg" data-title="Bruegel at work (5/5)"></div>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<div class="col-sm-12" >
+				<p>
+					This window illustrates the timelessness of Brueghel’s work.  What you see when you look through the frame, or window, will change through time.  Brueghel is a visionary, not limited to the fashion of his day.  His work is timeless. <br>
+					The right hand corner of the frame has disappeared completely to give the master’s hand complete freedom.  For the humanist in Renaissance times the world is opening up: there are discoveries, the perspective, the striving for freedom …  The open window symbolises the dialogue between Brueghel and the world.					
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- De Rijstpap etende duivel -->
+			<!-- ************************************** -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Bruegel/bruegelduiveltje.jpg" data-toggle="lightbox" data-gallery="bruegelduiveltje" data-title="Devil eating rice pudding"  >
+						<img src="../images/Bruegel/bruegelduiveltje_Small.jpg" alt="Devil eating rice pudding" class="img-responsive"><br>Zoom
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>Devil eating rice pudding</h2>
+				<p>(2015, Bruxelles - église Notre-Dame de la Chapelle)</p>
+				<p>				
+					After visiting Bruegel’s grave, on leaving the church you see on the righthand corner of the church, a statue of a devil eating rice pudding.  This refers to the legend of the gargoyle, which is supposed to have come down from the roof and became a beggar holding his plate out in the direction of the exit.<br>
+					If you look closely, you will recognize the devil from the painting The Dulle Griet.
+				</p>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Bruegel/bruegelduiveltje.jpg" data-toggle="lightbox" data-gallery="bruegelduiveltje" data-title="Devil eating rice pudding"  >
+						<img src="../images/Bruegel/bruegelduiveltje_Small.jpg" alt="Devil eating rice pudding" class="img-responsive">
+					</a>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- De ezel, het meisje en de deugniet -->
+			<!-- ************************************** -->
+
+			<div class="col-sm-6" >
+				<h2>The donkey, the girl and the rascal</h2>
+				<p>(2015, Brussel rondom de Kapellekerk)</p>
+				<p>
+					For this part of the set of statues, Tom Frantzen found inspiration in Bruegel’s "Donkey at school".  This drawing features a classroom with a teacher hitting a small boy on his bare bottom.  On the floor some pupils do their homework.  In the back there is a window, through which a donkey sticks his head, leaning on the window sill and strenuously attempting to learn to read.  Bruegel added a subtext to this drawing : "a donkey may learn to read but he will never be a horse".
+				</p>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Bruegel/bruegelezel.jpg" data-toggle="lightbox" data-gallery="bruegelezel" data-title="The donkey, the girl and the rascal (1/4)"  >
+						<img src="../images/Bruegel/bruegelezel_Small.jpg" alt="The donkey, the girl and the rascal" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel1.jpg" data-title="The donkey, the girl and the rascal (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel2.jpg" data-title="The donkey, the girl and the rascal (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel3.jpg" data-title="The donkey, the girl and the rascal (4/4)"></div> 					
+				</div>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Bruegel/bruegelezel.jpg" data-toggle="lightbox" data-gallery="bruegelezel" data-title="The donkey, the girl and the rascal"  >
+						<img src="../images/Bruegel/bruegelezel_Small.jpg" alt="The donkey, the girl and the rascal" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel1.jpg" data-title="The donkey, the girl and the rascal (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel2.jpg" data-title="The donkey, the girl and the rascal (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel3.jpg" data-title="The donkey, the girl and the rascal (4/4)"></div> 										
+				</div>
+			</div>		
+			<div class="clearfix"></div>
+			
+			<div class="col-sm-12" >
+				<p>					
+					Tom Frantzen carries this idea through and has the donkey actually reading in his set of Bruegel statues.  The donkey figure raises itself, sticks its head through the window and delivers a speech.  Since the window is fairly narrow, the donkey takes up all the space and there is no room left for dialogue.  The donkey’s words go through the window, other opinions and points of view cannot go back through the window.  The closed window of the donkey, in the shade of the church, is a stark contrast with Bruegel’s open window.  The donkey window stands for a closed mentality, dogmatism, conservatism, the refusal to engage in dialogue. <br>
+					The donkey is standing up, he impresses with his stature.  His donkey’s hat and long cape give him both a majestic and a slightly grotesque look.  The donkey is a leader, a pope, a king, a prime minister… The window so close to the church reminds us slightly of a confessional, the donkey uses it to lecture the passers-by, to make them pliant and meek.  On the ground, under the window, an unassuming young girl is trying to acquire some knowledge.  Her big hat protects her from the donkey’s balderdash.<br>
+					The rascal finally is provocative.  The boy shows his homework, but also his behind.  In between his legs you see a small face and you realise the rascal is laughing at you.<br>
+					From this point on, the passers-by and the tourists can go back to the Kapelleplein through the Holy Spirit street.  Of course you can also do the walk in the other direction.  The group of statues is interactive, it is as if you walk into a bronze painting of Bruegel’s.  Tourists can make funny foto’s through the different windows.  You can take a selfie with Brueghel or you can stand on the other side so he can paint you.   The window with the donkey offers some fun photography opportunities too.  <br>
+					<b>Conclusion:</b> This set of statues by Tom Frantzen offers a taste of typical Brussels’ humour, something tourists from all over the world appreciate enormously.  The Bruegel statues are sure to become one of the great tourist spots in the town of Brussels.
+
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Standbeeld brel -->
+			<!-- ************************************** -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Brel/medium_brel.jpg" data-toggle="lightbox" data-gallery="brel" data-title="Selfie with Brel (1/2)"  >
+						<img src="../images/Brel/small_brel.jpg" alt="Selfie with Brel" class="img-responsive"><br>Zoom
+					</a>
+					<div data-toggle="lightbox" data-gallery="brel" data-remote="../images/Brel/medium_brel_1.jpg" data-title="Brel (2/2)"></div> 					
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>Jacques Brel</h2>
+				<p>(2017, Brussel, Stoofstraat)</p>
+				<p>
+					At the request of the shopkeepers around the ‘Korenhuis’ (Old Cornhouse), a small square that will soon become car free and where the Jacques Brel museum is to be found, the statue was made in 2017.<br>
+					The challenge was to express all the aspects of his personality in a single statue.  <br>
+					Tom was awarded the first prize, ahead of four French sculptors.<br>
+					He chose a pose of Brel in full action, full of passion, a moment in concert.<br>
+					The statue is completely fitted to the area where it will be placed, in the middle of the square of the Old Cornhouse area.<br>
+					If you approach from the Eikstraat, you see Brel welcoming you with open arms, and when you come closer, it is as if you are looking at him inside a concert hall…
+				</p>				
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Brel/medium_brel.jpg" data-toggle="lightbox" data-gallery="brel" data-title="Selfie with Brel (1/2)"  >
+						<img src="../images/Brel/small_brel.jpg" alt="Selfie with Brel" class="img-responsive"><br>Zoom
+					</a>
+					<div data-toggle="lightbox" data-gallery="brel" data-remote="../images/Brel/medium_brel_1.jpg" data-title="Brel (2/2)"></div> 					
+				</div>
+			</div>				
+			<div class="col-sm-12" >
+
+				<p>
+					If you look at the back of the statue, down the Eikstraat, it looks as if he is about to fly: a reference to his longing for adventure and freedom.  It is symbolic of Brel’s works and reflects the whole being of the singer.  Brel was always looking for new challenges, always wanted to push his boundaries, wanted to surpass himself.<br>
+
+					The statue is place on a round pedestal: the circle symbolises the spotlight the singer stands in and refers to Brel as a stage animal.<br>
+					From the recordplayer on the pedestal a double circular movement starts: on the edge are apparently casually tossed lp’s, within are a number of typical Brussels’ objects, recreated as volumes: chocolates, referring to the song ‘bonbons’; a cone of chips, referring to the line ‘manger des frites chez Eugène’ from the song "Madeleine", some roses, referring to his success as a singer, but also to Brel as a passionate man.  And lastly, there are the lady’s slippers, they refer to the many women Brel was romantically involved with.<br>
+					The statue is near Manneke Pis in the Stoofstraat.<br>
+					Jacques Brel deserved this attractive spot in his beloved Brussels!
+				</p>			
+			</div>
+			
+
+			<div class="clearfix"></div>					
+					
+		</div> <!-- row -->
+	</div> <!-- container -->
+
+	<script type="text/javascript">
+			$(document).ready(function ($) {
+
+				// delegate calls to data-toggle="lightbox"
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						onShown: function() {
+							if (window.console) {
+								return console.log('Checking our the events huh?');
+							}
+						},
+						onNavigate: function(direction, itemIndex) {
+							if (window.console) {
+								return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+							}
+						}
+					});
+				});
+			
+			});
+	</script>
+</body>
+</html>

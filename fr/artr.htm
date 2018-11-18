@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rue</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional: Include the jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Lightbox for Bootstrap: http://ashleydw.github.io/lightbox -->
+	<script src="../js/ekko-lightbox.js"></script>
+	<link href="../css/ekko-lightbox.css" rel="stylesheet" />
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20016336-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<link rel="stylesheet" href="../css/tomfrantzen.css" type="text/css" >
+
+	<style>
+		/* set a max-width for horizontal fluid layout and make it centered */
+		.container-fluid {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 710px; /* or 950px */
+		}
+		/* horizontal align images */
+		IMG {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media screen and (max-width: 768px) {
+			body { padding-top: 40px; }
+		}
+		/* for fixed bottom navigation menu */
+		body { 
+			padding-bottom: 70px; 
+		}			
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs">
+	  <div class="container">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="somfr.htm">Retour</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- div for xs small screens -->
+			<!-- buttons above image -->
+			<nav class="navbar navbar-default navbar-fixed-top visible-xs " role="navigation" >
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+							<span class="sr-only">Tom Frantzen - Rue</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Tom Frantzen - Rue</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li ><a href="somfr.htm">Retour</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>			
+			<!--
+				2 column layout: image + text alternating text + image.  Lightbox effect on the image
+				on very small devices text followed by image - no lightbox
+			-->
+			<div class="col-sm-12 ">
+				<h1>SCULPTURES DE RUE</h1>
+				<p>
+					A plusieurs reprises, Tom Frantzen a été contacté par des comités de quartier et par des groupes culturels pour réaliser des sculptures 
+					ayant trait au passé culturel de Bruxelles.<br>
+					Ceci n'est pas un hasard.  Tom Frantzen, d'origine bruxelloise, est particulièrement sensible à "la zwanze", 
+					qu'il considère comme un humour très particulier où le mélange de langues fait émerger l'absurde et le surréalisme. <br>
+					Comme cet esprit est "en voie d'extinction", l'artiste a voulu, par le biais des sculptures le rendre "éternel" et le 
+					confronter aux générations futures. 
+					Pour arriver à une intégration optimale, il a tenu à les sceller à mème les trottoirs et à utiliser de vrais éléments de 
+					l'environnement tels qu'une taque d'égout, un luminaire, une borne etc...
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ******************* -->
+			<!-- TV Movie            -->
+			<!-- ******************* -->			
+			<div class="col-sm-12 ">
+				<div class="embed-responsive embed-responsive-16by9"><!-- 16by9 or 4by3 -->
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/y4fVivOM7K8" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ******************* -->
+			<!-- De Vaartkapoen -->
+			<!-- ******************* -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Vaartkapoen/Vaartkapoen.jpg" data-toggle="lightbox" data-gallery="vaartkapoen" data-title="De Vaartkapoen (1/5)"  >
+						<img src="../images/Vaartkapoen/Vaartkapoen_Small.jpg" alt="De Vaartkapoen" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen2.jpg" data-title="De Vaartkapoen (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen3.jpg" data-title="De Vaartkapoen (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen4.jpg" data-title="De Vaartkapoen (4/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen5.jpg" data-title="De Vaartkapoen (5/5)"></div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>De Vaartkapoen</h2>
+				<p>(1985, Molenbeek, devant le bâtiment de la Communauté française)</p>
+				<p>
+					Sur base d'un sujet imposé, "De Vaartkapoen", du nom des Molenbeekois de naissance ("de vaart" signifie le canal; "kapoen" signifie coquin), 
+					Tom Frantzen propose cette mise en scène sur un grand plan à deux niveaux.<br>
+					D'une part, le Vaartkapoen, tel un diable sortant de sa boîte, jeune révolté qui fait chavirer d'autre part l'autorité de l'agent de police.  
+					L'artiste en a transformé le matricule du numéro 22 en numéro 15 car c'était une occasion de faire un clin d'oeil à Hergé, 
+					cet autre artiste bruxellois qui aimait aussi pratiquer le même humour.. <br>
+					Dans un mouvement rappelant l'instantané, les deux compères se figent en toute légèreté, dans une pose éternelle tandis que notre 
+					imaginaire anticipe la suite... la chute du gag que l'esprit subversif de l'artiste bruxellois nous propose au détour d'un regard.
+				</p>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Vaartkapoen/Vaartkapoen.jpg" data-toggle="lightbox" data-gallery="vaartkapoen" data-title="De Vaartkapoen (1/5)"  >
+						<img src="../images/Vaartkapoen/Vaartkapoen_Small.jpg" alt="De Vaartkapoen" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen2.jpg" data-title="De Vaartkapoen (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen3.jpg" data-title="De Vaartkapoen (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen4.jpg" data-title="De Vaartkapoen (4/5)"></div>
+					<div data-toggle="lightbox" data-gallery="vaartkapoen" data-remote="../images/Vaartkapoen/Vaartkapoen5.jpg" data-title="De Vaartkapoen (5/5)"></div>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Madame Chapeau                         -->
+			<!-- ************************************** -->
+			
+			<div class="col-sm-6" >
+				<h2>Madame Chapeau</h2>
+				<p>(2000, Bruxelles, à côté du bâtiment des Mutualités socialistes)</p>	
+				<p>
+					Conçue pour assurer une dynamique entre deux rues, cette sculpture, précieux monument de la mémoire collective des Bruxellois et des Belges, 
+					rayonne par sa présence dans l'espace proposé à l'artiste. 
+					Elle contribue ainsi à relier "les gens qui passent" sur deux modes interactifs: l'espace du réel et le temps de l'imaginaire.<br>
+					Un gros plan sur la dame nous révèle une fois encore "la zwanze" de l'artiste: elle compte ses sous sans crainte des pickpockets, 
+					fréquents à cet endroit et les nargue avec son portefeuille inaccessible !<br><br>
+					<em >
+						Madame Chapeau est l'un des personnages haut en couleurs d'une comédie de 1938 de Paul van Stalle et Joris d'Hanswijck 
+						"Bossemans et Copenolle", mettant en scène les petits bourgeois du vieux Bruxelles. 
+						Cette pièce de théâtre fait partie du patrimoine culturel belge.
+					</em>
+				</p>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/MadameChapeau/chapeau1.jpg" data-toggle="lightbox" data-gallery="madamechapeau" data-title="Madame Chapeau (1/4)"  >
+						<img src="../images/MadameChapeau/chapeau1_Small.jpg" alt="Madame Chapeau" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau2.jpg" data-title="Madame Chapeau (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau3.jpg" data-title="Madame Chapeau (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau4.jpg" data-title="Madame Chapeau (4/4)"></div> 
+				</div>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/MadameChapeau/chapeau1.jpg" data-toggle="lightbox" data-gallery="madamechapeau" data-title="Madame Chapeau (1/4)"  >
+						<img src="../images/MadameChapeau/chapeau1_Small.jpg" alt="Madame Chapeau" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau2.jpg" data-title="Madame Chapeau (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau3.jpg" data-title="Madame Chapeau (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="madamechapeau" data-remote="../images/MadameChapeau/chapeau4.jpg" data-title="Madame Chapeau (4/4)"></div> 
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Het Zinneke -->
+			<!-- ************************************** -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Zinneke/zinneke.jpg" data-toggle="lightbox" data-gallery="zinneke" data-title="Het Zinneke (1/6)"  >
+						<img src="../images/Zinneke/zinneke_Small.jpg" alt="Het Zinneke" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke2.jpg" data-title="Het Zinneke (2/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke3.jpg" data-title="Het Zinneke (3/6)"></div>
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke4.jpg" data-title="Het Zinneke (4/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke5.jpg" data-title="Het Zinneke (5/6)"></div> 					
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke6.jpg" data-title="Het Zinneke (6/6)"></div> 
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>Het Zinneke</h2>
+				<p>(1999, Bruxelles, rue des Chartreux)</p>
+				<p>
+					Etymologiquement, ce "chien jeté dans la Senne", veut être un symbole du caractère multiculturel de Bruxelles. 
+					Il est une véritable sculpture de rue, puisqu'il y est complètement intégré par le trottoir et le poteau où il lève la patte.<br>
+					La sculpture commandée par le comité de quartier des Chartreux pour attirer les touristes et créée dans l'esprit de la "zwanze", 
+					en donne une dimension visuelle au public qui recherche ces sources de convivialité, ces occasions de "pouvoir s'amuser ensemble".
+				</p>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Zinneke/zinneke.jpg" data-toggle="lightbox" data-gallery="zinneke" data-title="Het Zinneke (1/6)"  >
+						<img src="../images/Zinneke/zinneke_Small.jpg" alt="Het Zinneke" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke2.jpg" data-title="Het Zinneke (2/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke3.jpg" data-title="Het Zinneke (3/6)"></div>
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke4.jpg" data-title="Het Zinneke (4/6)"></div> 
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke5.jpg" data-title="Het Zinneke (5/6)"></div> 					
+					<div data-toggle="lightbox" data-gallery="zinneke" data-remote="../images/Zinneke/zinneke6.jpg" data-title="Het Zinneke (6/6)"></div> 
+				</div>
+			</div>	
+			<div class="clearfix"></div>	
+			<!-- ************************************** -->
+			<!-- Bruegel                         -->
+			<!-- ************************************** -->
+			<div class="col-sm-12" >
+				<h2>Sculpture interactive de Pierre Bruegel L'Ancien</h2>
+				<p>
+					La sculpture est conçue en fonction de l’église  Notre-Dame de la Chapelle dans laquelle se trouve la tombe de Bruegel. Dans cette église  il s’est marié et ses deux fils y ont été baptisés.<br>
+					Les trois éléments qui constituent l’ensemble de la sculpture s’articulent autour de l’église. Ils  incitent les touristes  à faire une petite promenade autour et dans l’église.
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-6" >
+				<h2>Bruegel au travail</h2>
+				<p>(2015, Bruxelles - église Notre-Dame de la Chapelle)</p>
+				<p>
+					Sur la place de la Chapelle se trouve le peintre assis derrière son chevalet peignant dans la direction de la rue Blaes.<br>
+					Sur le chevalet il n’y a pas de tableau mais une fenêtre. Cette fenêtre s’appelle "La fenêtre ouverte".  Elle représente <i>l’esprit ouvert</i> de l’humaniste de la Renaissance. Il y a sur son épaule un petit singe coiffé d’un entonnoir. Celui-ci symbolise l’esprit satyrique de l’artiste. Ils regardent dans la même direction.<br>
+					En venant du Sablon nous apercevons le peintre de dos. Que voyons nous en regardant  par -dessus  son épaule, que peint-il ? Il peint l’évolution de la vie. Il l’observe et la transpose.
+				</p>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Bruegel/bruegel.jpg" data-toggle="lightbox" data-gallery="bruegelopenvenster" data-title="Bruegel au travail (1/5)"  >
+						<img src="../images/Bruegel/bruegel_Small.jpg" alt="Bruegel aan het werk" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel2.jpg" data-title="Bruegel au travail (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel3.jpg" data-title="Bruegel au travail (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster1.jpg" data-title="Bruegel au travail (4/5)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster2.jpg" data-title="Bruegel au travail (5/5)"></div> 
+				</div>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Bruegel/bruegel.jpg" data-toggle="lightbox" data-gallery="bruegelopenvenster" data-title="Bruegel au travail (1/5)"  >
+						<img src="../images/Bruegel/bruegel_Small.jpg" alt="Bruegel aan het werk" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel2.jpg" data-title="Bruegel au travail (2/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegel3.jpg" data-title="Bruegel au travail (3/5)"></div>
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster1.jpg" data-title="Bruegel au travail (4/5)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelopenvenster" data-remote="../images/Bruegel/bruegelopenvenster2.jpg" data-title="Bruegel au travail (5/5)"></div>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<div class="col-sm-12" >
+				<p>
+					Avec  cette fenêtre Tom Frantzen a voulu exprimer <i>l’intemporalité de Bruegel</i>.  La vue à travers la fenêtre change avec l’évolution du temps. Le peintre est un visionnaire qui n’est pas lié à la mode du moment.<br>
+					Le coin droit du cadre a complètement disparu pour donner une liberté totale à sa main qui peint. Pour l’humaniste de la Renaissance un monde s’ouvre ( les découvertes, la perspective, la liberté d’expression etc…). Le cadre n’est plus un carcan.				
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- De Rijstpap etende duivel -->
+			<!-- ************************************** -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Bruegel/bruegelduiveltje.jpg" data-toggle="lightbox" data-gallery="bruegelduiveltje" data-title="Diable mangeant du riz au lait"  >
+						<img src="../images/Bruegel/bruegelduiveltje_Small.jpg" alt="Diable mangeant du riz au lait" class="img-responsive"><br>Zoom
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>Diable mangeant du riz au lait</h2>
+				<p>(2015, Bruxelles - église Notre-Dame de la Chapelle)</p>
+				<p>
+					En sortant de l’église, après avoir visité la tombe de l’artiste, nous voyons à droite au coin du  bâtiment un <i>diable qui mange du riz au lait</i>. Celui-ci réfère à une gargouille qui serait descendue du toit  ainsi qu’a un mendiant qui tend son assiette vers l’entrée de l’église.<br>
+					Cette petite sculpture est placée juste au coin pour pouvoir <i>servir de lien entre les deux fenêtres</i>.<br>
+					Le visiteur attentif remarquera que ce personnage est sorti du tableau de Dulle Griet.
+				</p>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Bruegel/bruegelduiveltje.jpg" data-toggle="lightbox" data-gallery="bruegelduiveltje" data-title="Diable mangeant du riz au lait"  >
+						<img src="../images/Bruegel/bruegelduiveltje_Small.jpg" alt="Diable mangeant du riz au lait" class="img-responsive">
+					</a>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- De ezel, het meisje en de deugniet -->
+			<!-- ************************************** -->
+
+			<div class="col-sm-6" >
+				<h2>L’âne et la fenêtre fermée</h2>
+				<p>(2015, Brussel rondom de Kapellekerk)</p>
+				<p>
+					La deuxième fenêtre, nommée "la fenêtre fermée", se trouve à l’inverse de la fenêtre ouverte un peu à l’ombre de l’église. Elle exprime <i>l’esprit  fermé</i>,  le dogmatisme et le refus  de communiquer.<br>
+					Ici  le sculpteur s’est  inspiré d’une gravure "l’âne à l’école".  Elle représente une c lasse.  Au centre, un enseignant donne une fessée à un gamin. Les élèves sont assis sur le sol, dans le fond il y a un âne qui passe sa tête par la fenêtre et essaye péniblement d’apprendre à lire. Sous le dessin Bruegel a écrit qu’un âne peut apprendre à lire pour autant il ne deviendra jamais un cheval.
+				</p>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Bruegel/bruegelezel.jpg" data-toggle="lightbox" data-gallery="bruegelezel" data-title="L’âne et la fenêtre fermée (1/4)"  >
+						<img src="../images/Bruegel/bruegelezel_Small.jpg" alt="L’âne et la fenêtre fermée" class="img-responsive"><br>Zoom
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel1.jpg" data-title="L’âne et la fenêtre fermée (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel2.jpg" data-title="L’âne et la fenêtre fermée (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel3.jpg" data-title="L’âne et la fenêtre fermée (4/4)"></div> 					
+				</div>
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Bruegel/bruegelezel.jpg" data-toggle="lightbox" data-gallery="bruegelezel" data-title="L’âne et la fenêtre fermée"  >
+						<img src="../images/Bruegel/bruegelezel_Small.jpg" alt="L’âne et la fenêtre fermée" class="img-responsive">
+					</a>
+					<!-- elements not showing, use data-remote -->
+					<!-- must be in same div as main image -->
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel1.jpg" data-title="L’âne et la fenêtre fermée (2/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel2.jpg" data-title="L’âne et la fenêtre fermée (3/4)"></div> 
+					<div data-toggle="lightbox" data-gallery="bruegelezel" data-remote="../images/Bruegel/bruegelezel3.jpg" data-title="L’âne et la fenêtre fermée (4/4)"></div> 										
+				</div>
+			</div>		
+			<div class="clearfix"></div>
+			
+			<div class="col-sm-12" >
+				<p>
+					L’artiste a continué l’idée, l’âne sait lire. Et que fait-il ? Il se redresse et passe sa tête par la fenêtre et impose son discours au monde. Comme l’ouverture est  étroite, il prend toute la place et un dialogue devient impossible. Ses paroles partent mais les réponses et les autres visions ne savent pas repasser.<br>
+					Dans cette sculpture les trois personnages tiennent une feuille de papier.  Celles-ci  représentent ce que nous faisons avec notre savoir. L’âne s’est redressé et s’impose par sa taille. Son bonnet d’âne et sa cape lui donnent un aspect majestueux et grotesque à la fois. Il représente un potentat, un roi, un pape, un premier ministre etc…il impose sa vision pour que les autres l’obéissent.<br>
+					La petite fille est très studieuse et concentrée sur son travail. Son grand chapeau l’isole et la protège un peu du monde.<br>
+					Le petit garçon par contre provoque. Il montre son devoir mais en même temps son cul. Quand nous allons voir son visage entre ses jambes nous réalisons qu’il se fout de notre gueule.<br>
+					Après avoir vu cette deuxième fenêtre les touristes savent  prendre la petite rue du Saint Esprit pour revenir sur la place de la Chapelle. La promenade peut évidemment se faire dans le sens inverse.<br>
+					La sculpture est interactive car les visiteurs ont l’impression d’entrer dans un tableau  de Pierre Bruegel et participent à un jeu ludique dans l’espace. Ainsi par exemple  ils savent se photographier dans le cadre à côté du peintre ou de l’autre côté de telle façon qu’on a l’impression que le peintre les peint dans le cadre.<br>
+					Le groupe de l’âne incite aussi à créer des situations amusantes entre les visiteurs et les personnages Bruegeliens.
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Standbeeld brel -->
+			<!-- ************************************** -->
+			<div class="col-sm-6 hidden-xs" >
+				<div style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<a href="../images/Brel/medium_brel.jpg" data-toggle="lightbox" data-gallery="brel" data-title="Selfie avec Brel (1/2)"  >
+						<img src="../images/Brel/small_brel.jpg" alt="Selfie avec Brel" class="img-responsive"><br>Zoom
+					</a>
+				</div>
+				<div data-toggle="lightbox" data-gallery="brel" data-remote="../images/Brel/medium_brel_1.jpg" data-title="Brel (2/2)"></div> 
+			</div>
+			<div class="col-sm-6">
+				<h2>Jacques Brel</h2>
+				<p>(2017, Brussel, Rue de l'Etuve)</p>
+				<p>
+					L’ initiative vient des commerçants de la place de la Vielle Halle aux Blés et a été soutenue et financée par la Ville de Bruxelles. <br>
+					Le défi était d’exprimer tous les aspects de la personnalité de Brel en une sculpture.<br>
+					La maquette de Tom a été préférée à celles de trois artistes français.<br>
+					Le sculpteur a choisi de représenter le grand Jacques chantant avec les bras ouverts.<br>
+					C’est comme un instantané d’un concert. Brel est en pleine action, rayonnant de passion.<br>
+					Ce mouvement est très sculptural et occupe bien l’espace.<br>
+					La sculpture est conçue en fonction de l’endroit, au centre de la Vielle Halle aux Blés.<br>
+					Quand vous remontez la rue Du Chêne (qui deviendra un piétonnier) on a l’impression qu’il nous accueille. En se rapprochant on a l’illusion d’assister à un de ses concerts.
+				</p>				
+			</div>
+			<div class="col-sm-6 visible-xs" >
+				<div style="text-align:center;">
+					<a href="../images/Brel/medium_brel.jpg" data-toggle="lightbox" data-gallery="brel" data-title="Selfie avec Brel (1/2)"  >
+						<img src="../images/Brel/small_brel.jpg" alt="Selfie avec Brel" class="img-responsive"><br>Zoom
+					</a>
+					<div data-toggle="lightbox" data-gallery="brel" data-remote="../images/Brel/medium_brel_1.jpg" data-title="Brel (2/2)"></div> 
+				</div>
+			</div>				
+			<div class="col-sm-12" >
+
+				<p>
+					
+					Quand on vient du haut nous le voyons de dos et nous avons l’impression qu’il va prendre son envol vers la rue Du Chêne descendante. Ce mouvement suggère sa volonté de liberté qui s’illustre dans toute son œuvre. Brel chercha à échapper au carcan bourgeois et à découvrir de nouveaux horizons.<br>
+					Il avait constamment le besoin de se surpasser.<br>
+					La sculpture se trouve sur un socle cylindrique. Le cercle suggère le rayon lumineux de la scène dans lequel Brel exprimait toute sa passion soir après soir. Dans ce cercle, derrière le micro, il se donnait totalement jusqu’à épuisement.<br>
+					Dans cet espace  son monde musical est exprimé.<br>
+					A partir du tourne-disque, part un double mouvement circulaire. Le long du bord on dirait  que des disques ont été jetés nonchalamment par terre. Dans chaque disque, une  illustration d’une de ses chansons connues a été gravée. Le second cercle, intérieur, est constitué d’objets en volumes. Ceux-ci réfèrent à ses chansons. Il y a des bonbons qui sont un clin d’oeil à la chanson ’Les bonbons’, un sachet de frites nous rappelle les frites de chez Eugène dans la chanson ’Madeleine’. Quelques roses qui témoignent de son immense succès comme chanteur mais qui expriment aussi sa personnalité passionnée et bien sûr la chanson Rosa. Et finalement des chaussures de femmes qui réfèrent à l’homme à femmes qu’il était. 
+				</p>			
+			</div>
+			
+
+			<div class="clearfix"></div>					
+		</div> <!-- row -->
+	</div> <!-- container -->
+
+	<script type="text/javascript">
+			$(document).ready(function ($) {
+
+				// delegate calls to data-toggle="lightbox"
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						onShown: function() {
+							if (window.console) {
+								return console.log('Checking our the events huh?');
+							}
+						},
+						onNavigate: function(direction, itemIndex) {
+							if (window.console) {
+								return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+							}
+						}
+					});
+				});
+			
+			});
+	</script>
+</body>
+</html>

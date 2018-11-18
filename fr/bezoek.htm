@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visites de groupe</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Bootstrap form validation -->
+	<link rel="stylesheet" href="../css/bootstrapValidator.css"/>
+	<!-- Optional: Include the jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Javascript for Bootstrap validator -->
+	<script type="text/javascript" src="../js/bootstrapValidator.js"></script>
+	<!-- Language specific files for Bootstrap validator 
+	<script type="text/javascript" src="../js/language/be_NL.js"></script>
+	-->
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20016336-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<link rel="stylesheet" href="../css/tomfrantzen.css" type="text/css" >
+
+	<style>
+		/* set a max-width for horizontal fluid layout and make it centered */
+		.container-fluid {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 710px; /* or 950px */
+		}
+		/* horizontal align images */
+		IMG {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media screen and (max-width: 768px) {
+			body { padding-top: 40px; }
+		}	
+		/* for fixed bottom navigation menu */
+		body { 
+			padding-bottom: 70px; 
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs">
+	  <div class="container">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="somfr.htm">Retour</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- div for xs small screens -->
+			<!-- buttons above image -->
+			<nav class="navbar navbar-default navbar-fixed-top visible-xs " role="navigation" >
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+							<span class="sr-only">Visites de groupe</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Visites de groupe</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li ><a href="schat.htm">Les sentiers du Chatmikaze</a></li>
+							<li ><a href="somfr.htm">Retour</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>			
+
+
+			<!-- ******************* -->
+			<!-- Groepsbezoek -->
+			<!-- ******************* -->
+			<div class="col-sm-12">
+				<h1>Visites de groupe</h1>
+				<p>
+					Le jardin des sculptures de Tom Frantzen est ouvert au public  du 15 avril au 15 octobre.
+				</p>
+				<p>
+					Des visites, guidées par le sculpteur lui-même, sont organisées sur demande uniquement, pour des groupes de minimum 15 et maximum 25 participants.
+				</p>
+				<p>
+					Réservation préalable indispensable (voir <a href="#reservatie">formulaire en ligne</a>).  Un e-mail de confirmation vous sera renvoyé avec les modalités de paiement. La réservation ne sera définitive qu’après réception du paiement.
+				</p>
+				<p>
+					Munissez-vous de bonnes chaussures.
+				</p>
+				<p>
+					Durée de la visite: environ 2 heures.
+				</p>
+				<p>
+					Adresse: Waaienberg 17 - 3080 Duisburg.
+				</p>
+				<p>
+					Parking: environ 20 voitures.
+				</p>
+				<p>
+					<span style="text-decoration: underline;">Prix d’entrée</span>:
+					<ul >
+						<li >Adultes: 14,00 €</li>
+						<li >Seniors (65+) et étudiants (13-24 ans): 10,00 € </li>
+						<li >Enfants (4 à 12 ans): 5,00 €</li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="clearfix"></div>
+			<!-- ************************************** -->
+			<!-- Reservatieformulier                    -->
+			<!-- Let op: de validator werkt op basis van naam -->
+			<!-- ************************************** -->
+			<div class="col-sm-12" id="reservatieformContainer">
+				<form role="form" id="reservatieform" method="post" >
+						<a id="reservatie"></a>
+						<h1>Formulaire de réservation et d'informations</h1><br>
+
+						<div class="form-group">
+							<label for="contact">Personne de contact:</label>
+							<input type="text" class="form-control" id="contact" name="contact"
+								data-bv-notempty="true"
+								data-bv-notempty-message="La personne de contact est un champs obligatoire."
+								data-bv-stringlength="true"
+								data-bv-stringlength-min="3"
+								data-bv-stringlength-message="La personne de contact doit être d'au moins six caractères."						
+							>
+						</div>
+						<div class="form-group">
+							<label for="mail">Adresse e-mail:</label>
+							<input type="email" class="form-control" id="mail" name="mail"
+								data-bv-notempty="true"
+								data-bv-notempty-message="Adresse e-mail est un champs obligatoire."
+								data-bv-emailaddress="true"
+								data-bv-emailaddress-message="Adress e-mail n'est pas valide."
+								>
+						</div>
+						<div class="form-group">
+							<label for="tel">N° de GSM / téléphone:</label>
+							<input type="text" class="form-control" id="tel" name="tel"
+								data-bv-regexp="true"
+								data-bv-regexp-regexp="^[0-9 \.\-/]{9,20}$"
+								data-bv-regexp-message="Le n° de GMS doit être d'au moins 9 chiffres.  Les autres caractères ne sont pas admis."
+							>
+						</div>
+						<div class="form-group">
+							<label>Information souhaitée</label>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Feedback" />Laisser un feedback</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Vraag" />Poser une question</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="formule" value="Groepsbezoek" />Réserver une visite de groupe</label>
+								</div>
+						</div>
+
+						<div class="form-group" id="aantalpersonensectie" style="display:none">
+							<label for="aantal">Nombre de participants:</label>
+							<input type="text" class="form-control" id="aantal" name="aantal" 
+								data-bv-notempty="true"
+								data-bv-notempty-message="Combien de personnes en total ?"
+								data-bv-integer="true"
+								data-bv-integer-message="Donnez un nombre valide." 
+								data-bv-between="true"
+								data-bv-between-inclusive="true"
+								data-bv-between-min="15"
+								data-bv-between-max="25"
+								data-bv-between-message="La taille du groupe est de 15 à 25 personnes."
+								>
+						</div>	
+
+						<div class="form-group" id="datum1sectie" style="display:none">
+							<label for="datum1">Date/heure de préférence:</label>
+							<input type="text" class="form-control" name="datum1" id="datum1" placeholder="DD/MM/YYYY hh:mm"
+								data-bv-notempty="true"
+								data-bv-notempty-message="Date de visite est un champs obligatoire."
+								data-bv-date="true"
+								data-bv-date-format="DD/MM/YYYY h:m"
+								data-bv-date-message="Donnez une date (JJ/MM/YYYY hh:mm) valide (p.e. 17/03/2015 10:00)" />
+						</div>
+						<div class="form-group" id="datum2sectie" style="display:none">
+							<label for="datum2">Date/heure alternative:</label>
+							<input type="text" class="form-control" name="datum2" id="datum2" placeholder="DD/MM/YYYY hh:mm"
+								data-bv-notempty="false"
+								data-bv-date="true"
+								data-bv-date-format="DD/MM/YYYY hh:mm"
+								data-bv-date-message="Donnez une date (JJ/MM/YYYY hh:mm) valide (p.e. 17/03/2015 10:00)" />
+						</div>	
+						<div class="form-group" id="datum3sectie" style="display:none">
+							<label for="datum3">Date/heure alternative:</label>
+							<input type="text" class="form-control" name="datum3" id="datum3" placeholder="DD/MM/YYYY hh:mm"
+								data-bv-notempty="false"
+								data-bv-date="true"
+								data-bv-date-format="DD/MM/YYYY h:m"
+								data-bv-date-message="Donnez une date (JJ/MM/YYYY hh:mm) valide (p.e. 17/03/2015 10:00)" />
+						</div>	
+
+						<div class="form-group">
+							<label for="comment">Remarques et demandes particulières:</label>
+							<textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+						</div>	
+						<!-- user language as hidden field -->
+						<input type="text" name="taal" id="taal" style="display:none;" value="fr">
+						<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+						<button type="submit" class="btn btn-default">Envoyer</button>
+				</form>
+			</div> <!-- formcontainer -->
+			<div class="clearfix"></div>
+			<!-- ******************* -->
+			<!-- Bereikbaarheid -->
+			<!-- ******************* -->
+			<div class="col-sm-12" >
+				<h1>Informations générales</h1>
+				<div class="embed-responsive embed-responsive-4by3" style="text-align:center; margin-top: 5em; margin-bottom: 5em;">
+					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2521.6030812998597!2d4.541521708277187!3d50.80146410936882!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbe!4v1423771836045">
+					</iframe>
+
+				</div>
+				<p>Le Jardin des Sculptures est situé dans l’environnement buccolique des champs de Duisburg (Commune de Tervuren), à deux pas de la magnifique  <a href="http://www.foret-de-soignes.be/" target="_blank">Forêt de Soignes</a> sur le point d’être classée au Patrimoine Mondial de L’unesco.</p>
+				<p><a href="https://www.delijn.be/fr/lijnen/lijn//3/830/1/BUS" target="_blank">Le bus 830 des transports publics De Lijn</a> vous y emmènera . Descendez à l’arrêt Duisburg Eizerstraat  et marchez quelques minutes jusqu’à l’entrée du jardin (à côté de l’habitation) située  <a href="https://www.google.be/maps/place/Waaienberg+19,+3080+Tervuren/@50.8014453,4.5397786,17z/data=!3m1!4b1!4m2!3m1!1s0x47c3d90870ce59a7:0xd39a85c66e7d184e" target="_blank">Waaienberg 17</a> . <b>Prière de ne pas sonner</b>. C’est là que vous attendra le guide.</p>
+			</div>			
+	<div class="clearfix"></div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+	<!-- Activate form validation script -->
+	<script>
+		$(document).ready(function() {
+			$('#reservatieform').bootstrapValidator({
+				// To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+				feedbackIcons: {
+					valid: null, //'glyphicon glyphicon-ok',
+					invalid: null, //'glyphicon glyphicon-remove',
+					validating: null //'glyphicon glyphicon-refresh'
+				},
+				fields: {
+					formule: {
+						validators: {
+							notEmpty: {
+								message: 'Kies de gewenste informatie.'
+							}
+						}
+					},
+					aantal: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},
+					datum1: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},
+					datum2: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},	
+					datum3: {
+						icon: false
+						// validators worden in html gedeclareerd					
+					},		
+					autocar: {
+						validators: {
+							notEmpty: {
+								message: 'Wie zorgt voor de autocar?'
+							}
+						}
+					}					
+				}
+			}).on('success.form.bv', function(e) {
+				console.log ("submit handler called");
+				// Prevent form submission
+				e.preventDefault();
+				// Get the form instance
+				var $form = $(e.target);
+				// Get the FormValidation instance
+				var bv = $form.data('bootstrapValidator');
+				// Use Ajax to submit form data
+				$.ajax({
+					type: "POST",
+					url: "../send_form_email.php",
+					data: $form.serialize(), // serializes the form's elements.
+					dataType: 'html',
+					success: function(data){
+						console.log ("result was received; %o", data);; // bevestigingsboodschap zit in respons als html.
+						$('#reservatieformContainer').html(data);
+					},
+					error: function(jqXHR, textStatus, errorThrown ) {
+						var errorTxt = '<h1 style="color:red;">Onverwachte fout</h1><p>Problemen bij het verzenden van het formulier....</p>';
+						$('#reservatieformContainer').html(errorTxt);
+					}
+				});
+			});
+		
+			// add event handler for radio button
+			$('input[name="formule"]').change( function() {
+				//console.log ("bootstrapValidator object: %o", $('#reservatieform').data('bootstrapValidator'));
+				var choice = $(this).val();
+				//console.log("Gewenste informatie: " + $(this).val());
+				// diverse secties tonen--verstoppen
+				$('#aantalpersonensectie').css( "display", "none" );
+				$('#autocarsectie').css( "display", "none" );
+				$('#startplaatssectie').css( "display", "none" );
+				$('#dessertsectie').css( "display", "none" );
+				$('#datum1sectie').css( "display", "none" );
+				$('#datum2sectie').css( "display", "none" );
+				$('#datum3sectie').css( "display", "none" );			
+
+				if (choice=="Groepsbezoek") {
+					$('#aantalpersonensectie').css( "display", "block" );
+					$('#datum1sectie').css( "display", "block" );
+					$('#datum2sectie').css( "display", "block" );
+					$('#datum3sectie').css( "display", "block" );		
+					// formuliervelden die niet van toepassing zijn wissen zodat ze Tom niet in verwarring brengen
+					$('#autocarO').prop("checked",false);
+					$('#autocarA').prop("checked",false);
+					$('#startplaats').val("");
+					$('#aantalKaas').val("");
+					$('#aantalTaart').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField ( 'startplaats',true);
+
+				} else if (choice=="Dagtrip") {
+					$('#aantalpersonensectie').css( "display", "block" );
+					$('#dessertsectie').css( "display", "block" );
+					$('#datum1sectie').css( "display", "block" );
+					$('#datum2sectie').css( "display", "block" );
+					$('#datum3sectie').css( "display", "block" );	
+					$('#autocarsectie').css( "display", "block" );
+					// startplaats bus mag verstopt blijven
+				} else  {
+					// velden wissen
+					$('#aantal').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField( 'aantal',true);
+					$('#autocarO').prop("checked",false);
+					$('#autocarA').prop("checked",false);
+					$('#startplaats').val("");
+					$('#aantalKaas').val("");
+					$('#aantalTaart').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField('startplaats',true);
+					$('#datum1').val("");
+					//$('#reservatieform').data('bootstrapValidator').resetField('datum1',true);
+					$('#datum2').val("");
+					$('#datum3').val("");				
+					//$('#reservatieform').data('bootstrapValidator').resetField('datum2',true);
+
+
+				}
+				
+			});
+			$('input[name="autocar"]').change( function() {
+				// als gekozen wordt voor "artiest kiest de start" dan startplaats tonen
+				var choice = $(this).val();
+				if (choice=="Artiest zorgt voor car") {
+					$('#startplaatssectie').css( "display", "block" );
+				} else {
+					$('#startplaatssectie').css( "display", "none" );
+					$('#startplaats').val("");
+				}
+			});
+		
+		});
+
+		
+		function postReservatieForm ( ) {
+			console.log ("Submit was clicked!");
+			// block the submit
+			return false;
+		}
+	</script>
+</body>
+</html>

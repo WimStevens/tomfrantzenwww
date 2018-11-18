@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /en_old/
+Disallow: /fr_old/
+Disallow: /nl_old/
+Disallow: /images_old/
+Disallow: /images/
+Disallow: /testv2/
+Disallow: /test/

@@ -122,6 +122,7 @@
 						<li >Volwassenen: € 14,00</li>
 						<li >Senioren (65+) en studenten: € 10,00 </li>
 						<li >Kinderen onder 12 jaar: € 5,00</li>
+						<li >Gids: € 100,00 </li>
 					</ul>
 				</p>
 			</div>
@@ -139,7 +140,7 @@
 					Bus vanuit eigen gemeente of vanaf het Brusselse Centraal station
 				</p>
 				<p>
-					<span style="text-decoration: underline;">Richtprijs</span>: € 35,00 (inclusief gidsen, inkom & lunch - exclusief autocar)
+					<span style="text-decoration: underline;">Richtprijs</span>: € 25,00 (exclusief autocar, luch, koffie, taart, ...)
 				</p>
 				<p>
 					<span style="text-decoration: underline;">Standaardprogramma</span>:
@@ -148,7 +149,7 @@
 						<li>10.00u: Tom Frantzen beeldenroute</li>
 						<li>12.30u: Lunch in Tervuren</li>
 						<li>14.30u: Bezoek atelier en beeldentuin in Duisburg</li>
-						<li>16.30u: Optioneel: Breugheltaart of Duisburgse kaastaart (oud recept) met koffie of thee.  Afzonderlijk te betalen: streekbier, streekwijn en fruitsap uit de streek.</li>
+						<li>16.30u: Optioneel: Breugheltaart met koffie of thee.  Afzonderlijk te betalen: streekbier, streekwijn en fruitsap uit de streek.</li>
 						<li>17.15u: Einde en aanvang terugrit</li>
 					</ul>
 				</p>
@@ -265,22 +266,13 @@
 						</div>
 						<div id="dessertsectie" style="display:none">
 							<div class="form-group" >
-								<label for="aantal">Aantal porties Bruegheltaart me koffie of thee (€ 5,00):</label>
-								<input type="text" class="form-control" id="aantalKaas" name="aantalKaas" 
+								<label for="aantalTaart">Aantal porties Bruegheltaart met koffie of thee (€ 5,00):</label>
+								<input type="text" class="form-control" id="aantalTaart" name="aantalTaart" 
 									data-bv-notempty="true"
 									data-bv-notempty-message="Hoeveel porties Bruegheltaart."
 									data-bv-integer="true"
 									data-bv-integer-message="Geldig aantal opgeven." 
 									>
-							</div>
-							<div class="form-group" >									
-								<label for="aantal">Aantal porties Duisburgse kaastaart (oud recept) met koffie of thee (€ 5,00):</label>
-								<input type="text" class="form-control" id="aantalTaart" name="aantalTaart" 
-									data-bv-notempty="true"
-									data-bv-notempty-message="Hoeveel porties Duisburgse kaastaart."
-									data-bv-integer="true"
-									data-bv-integer-message="Geldig aantal opgeven." 
-									>								
 							</div>
 						</div> <!-- /dessertSectie -->
 						<div class="form-group">
@@ -400,7 +392,6 @@
 					$('#autocarO').prop("checked",false);
 					$('#autocarA').prop("checked",false);
 					$('#startplaats').val("");
-					$('#aantalKaas').val("");
 					$('#aantalTaart').val("");
 					//$('#reservatieform').data('bootstrapValidator').resetField ( 'startplaats',true);
 
@@ -419,7 +410,6 @@
 					$('#autocarO').prop("checked",false);
 					$('#autocarA').prop("checked",false);
 					$('#startplaats').val("");
-					$('#aantalKaas').val("");
 					$('#aantalTaart').val("");
 					//$('#reservatieform').data('bootstrapValidator').resetField('startplaats',true);
 					$('#datum1').val("");
